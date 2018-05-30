@@ -10,6 +10,7 @@ function moverinterruptor(){
 }
 
 function apagarluz(){
+	document.body.style.backgroundColor = "black";
 	document.getElementById("oscuridad").style.display = "block";
 	document.getElementById("interruptor").innerHTML = "\\";
 	luz = false;
@@ -18,6 +19,7 @@ function apagarluz(){
 }
 
 function prenderluz(){
+	document.body.style.backgroundColor = "white";
 	document.getElementById("oscuridad").style.display = "none";
 	document.getElementById("interruptor").innerHTML = "/";
 	luz = true;
