@@ -14,6 +14,8 @@ function apagarluz(){
 	document.getElementById("oscuridad").style.display = "block";
 	document.getElementById("interruptor").innerHTML = "\\";
 	luz = false;
+	var click = document.getElementById("click");
+	click.play();
 	var mama = document.getElementById("mama");
 	mama.play();
 }
@@ -26,4 +28,6 @@ function prenderluz(){
 	var mama = document.getElementById("mama");
 	mama.pause();
 	mama.currentTime = 0;
+	var click = document.getElementById("click");
+	click.play();
 }
